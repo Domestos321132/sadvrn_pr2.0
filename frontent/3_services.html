@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Услуги</title>
+  <link rel="stylesheet" href="style_gl.css">
+</head>
+
+<header id="header"></header>
+<script>
+  fetch("head.html")
+      .then(response => response.text())
+      .then(data => {
+          document.getElementById("header").innerHTML = data;
+      });
+</script>
+
+
+<body>
+<main>
+  <section class="catalog">
+    <div class="card">Услуга 1</div>
+    <div class="card">Услуга 2</div>
+    <div class="card">Услуга 3</div>
+    <div class="card">Услуга 4</div>
+    <div class="card">Услуга 5</div>
+    <div class="card">Услуга 6</div>
+    <div class="card">Услуга 7</div>
+    <div class="card">Услуга 8</div>
+    <div class="card">Услуга 9</div>
+    <div class="card">Услуга 10</div>
+    <div class="card">Услуга 11</div>
+    <div class="card">Услуга 12</div>
+  </section>
+  <div class="pagination">
+    <span class="page-number">1</span>
+    <span class="page-number">2</span>
+    <span class="page-number">3</span>
+    <span class="page-number">4</span>
+    <span class="page-number">5</span>
+  </div>
+</main>
+</body>
+</html>

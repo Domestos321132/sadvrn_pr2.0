@@ -1,19 +1,14 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
-  <link rel="stylesheet" href="frontent/style_gl.css">
+  <title>Товары</title>
+  <link rel="stylesheet" href="style_gl.css">
 </head>
 
-<body>
-
 <header id="header"></header>
-
 <script>
-  // Загрузка содержимого head.html в header
   fetch("head.html")
       .then(response => response.text())
       .then(data => {
@@ -21,16 +16,7 @@
       });
 </script>
 
-<div class="carousel">
-  <button class="carousel-button prev">❮</button>
-  <button class="carousel-button next">❯</button>
-  <img src="image/image1.jpg" class="active" alt="Изображение 1">
-  <img src="image/image2.jpg" alt="Изображение 2">
-  <img src="image/image3.jpg" alt="Изображение 3">
-</div>
-
-<script src="backhend/script_carousel.js"></script>
-
+<body>
 <main>
   <section class="catalog">
     <div class="card">Товар 1</div>
@@ -54,8 +40,5 @@
     <span class="page-number">5</span>
   </div>
 </main>
-
-
-
 </body>
 </html>
